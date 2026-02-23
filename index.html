@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio | Raquel Martins</title>
+    <link rel="icon" type="image/png" href="/img/RMS.png" />
+    <link rel="stylesheet" href="style.css">
+    <!-- Fonte Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div id="canvas-container"></div>
+
+    <nav class="navbar">
+        <div class="logo">RM</div>
+        <div class="nav-right">
+            <div class="nav-menu">
+                <a href="#home" class="nav-link" data-i18n="nav_home">Início</a>
+                <a href="#about" class="nav-link" data-i18n="nav_about">Sobre</a>
+                <a href="#tech" class="nav-link" data-i18n="nav_tech">Tecnologias</a>
+                <a href="#projects" class="nav-link" data-i18n="nav_projects">Projetos</a>
+                <a href="https://api.whatsapp.com/send?phone=5579996582116" class="nav-link" data-i18n="nav_contact">Contato</a>
+            </div>
+            <div class="controls">
+                <button id="theme-btn" class="icon-btn" title="Mudar Tema">☀</button>
+                <button id="lang-btn" class="lang-switch" title="Change Language">EN</button>
+            </div>
+            <button class="mobile-btn">☰</button>
+        </div>
+    </nav>
+
+    <main>
+        
+        <!-- INÍCIO -->
+        <section id="home">
+            <div class="hero-content">
+                <p class="greeting fade-in-up" data-i18n="hero_greeting">Olá, meu nome é</p>
+                <h1 class="main-title fade-in-up delay-100">Raquel Martins</h1>
+                <h2 class="subtitle fade-in-up delay-200" data-i18n="hero_subtitle">Sou Desenvolvedora de Software</h2>
+                <p class="description fade-in-up delay-300" data-i18n="hero_desc">
+                    Graduada em Ciência da Computação, entusiasta de tecnologia e focada em criar soluções criativas e funcionais que agregam valor a projetos.
+                </p>
+                <a href="#projects" class="btn-primary fade-in-up delay-300" data-i18n="hero_btn">Ver Projetos</a>
+            </div>
+        </section>
+
+        <!-- SOBRE MIM  -->
+        <section id="about">
+            <div class="about-wrapper">
+                
+                <!-- Parte 1: Foto e Texto -->
+                <div class="glass-panel about-main-card reveal-on-scroll">
+                    <div class="profile-img-container">
+                        <!-- Placeholder para a foto -->
+                        <img src="/img/foto.jpeg" alt="Foto 01" class="profile-img">
+                    </div>
+                    <div class="about-content">
+                        <div class="section-header">
+                            <span class="section-num">01.</span>
+                            <h2 class="section-title" data-i18n="about_title">Sobre Mim</h2>
+                        </div>
+                        <p style="color: var(--text-muted); line-height: 1.6;" data-i18n="about_intro">
+                            Formada em Ciência da Computação, tenho grande interesse na área de Front-End e estou sempre buscando aprender e evoluir tecnicamente. Gosto de transformar ideias em interfaces claras e funcionais, com foco na usabilidade e no impacto para o usuário. Também atuo no Back-End com Java, o que amplia minha visão sobre os projetos e me permite colaborar em diferentes etapas do desenvolvimento. Conciliar essas duas áreas ampliou minha perspectiva e vem consolidando meu caminho como desenvolvedora Fullstack. Dedico-me a criar soluções claras, eficientes e alinhadas às boas práticas, contribuindo para a evolução constante dos projetos.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Parte 2: Competência e Foco -->
+                <div class="skills-grid">
+                    <div class="skill-card reveal-on-scroll">
+                        <h3 class="about-subtopic" data-i18n="about_comp_title">
+                            <span style="color: var(--color-primary);">⚡</span> Competência Principal
+                        </h3>
+                        <p style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.6; text-align: justify;" data-i18n="about_comp_desc">
+                            Desenvolvimento Full Stack, com capacidade de atuar de forma integrada entre front-end e back-end, aplicando boas práticas de engenharia de software, organização de código e atenção à experiência do usuário.
+                        </p>
+                    </div>
+                    
+                    <div class="skill-card reveal-on-scroll">
+                        <h3 class="about-subtopic" data-i18n="about_focus_title">
+                            <span style="color: var(--color-secondary);">🎯</span> Foco Técnico
+                        </h3>
+                        <p style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.6; text-align: justify;" data-i18n="about_focus_desc">
+                            Construção de interfaces web modernas e responsivas, integração com APIs, preocupação com performance, confiabilidade e impacto das aplicações na experiência do usuário, aliando prática profissional, atuação em NOC e docência em Informática.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- TECNOLOGIAS -->
+        <section id="tech">
+            <div class="tech-container">
+                <div class="tech-content-wrapper glass-panel reveal-on-scroll">
+                    <div class="section-header">
+                        <span class="section-num">02.</span>
+                        <h2 class="section-title" data-i18n="tech_title">Tecnologias</h2>
+                    </div>
+                    <p style="color: var(--text-muted); margin-bottom: 2rem;" data-i18n="tech_subtitle">
+                        Ferramentas e linguagens que utilizo no meu dia a dia:
+                    </p>
+                    
+                    <div class="tech-grid">
+                        <div class="tech-card flip">
+                            <div class="tech-inner">
+                                <div class="tech-front">HTML</div>
+                                <div class="tech-back">12</div>
+                            </div>
+                        </div>
+
+                        <div class="tech-card flip">
+                            <div class="tech-inner">
+                                <div class="tech-front">CSS</div>
+                                <div class="tech-back">12</div>
+                            </div>
+                        </div>
+
+                        <div class="tech-card flip">
+                            <div class="tech-inner">
+                                <div class="tech-front">JavaScript</div>
+                                <div class="tech-back">10</div>
+                            </div>
+                        </div>
+
+                        <div class="tech-card flip">
+                            <div class="tech-inner">
+                                <div class="tech-front">React.js</div>
+                                <div class="tech-back">6</div>
+                            </div>
+                        </div>
+
+                        <div class="tech-card flip">
+                            <div class="tech-inner">
+                                <div class="tech-front">Electron</div>
+                                <div class="tech-back">2</div>
+                            </div>
+                        </div>
+
+                        <div class="tech-card flip">
+                            <div class="tech-inner">
+                                <div class="tech-front">Python</div>
+                                <div class="tech-back">9</div>
+                            </div>
+                        </div>
+
+                        <div class="tech-card flip">
+                            <div class="tech-inner">
+                                <div class="tech-front">Java</div>
+                                <div class="tech-back">5</div>
+                            </div>
+                        </div>
+
+                        <div class="tech-card flip">
+                            <div class="tech-inner">
+                                <div class="tech-front">MySQL</div>
+                                <div class="tech-back">7</div>
+                            </div>
+                        </div>
+
+                        <div class="tech-card flip">
+                            <div class="tech-inner">
+                                <div class="tech-front">Vue.js</div>
+                                <div class="tech-back" >3</div>
+                            </div>
+                        </div>
+
+                        <div class="tech-card flip">
+                            <div class="tech-inner">
+                                <div class="tech-front">TypeScript</div>
+                                <div class="tech-back">6</div>
+                            </div>
+                        </div>
+
+                        <div class="tech-card flip">
+                            <div class="tech-inner">
+                                <div class="tech-front">Node.js</div>
+                                <div class="tech-back">8</div>
+                            </div>
+                        </div>
+
+                        <div class="tech-card flip">
+                            <div class="tech-inner">
+                                <div class="tech-front">TailwindCSS</div>
+                                <div class="tech-back">6</div>
+                            </div>
+                        </div>
+
+                        <div class="tech-card flip">
+                            <div class="tech-inner">
+                                <div class="tech-front">Git</div>
+                                <div class="tech-back" data-i18n="tech_git">Uso diário</div>
+                            </div>
+                        </div>
+
+                        <div class="tech-card flip">
+                            <div class="tech-inner">
+                                <div class="tech-front">GitHub</div>
+                                <div class="tech-back" data-i18n="tech_github">+20 repositórios</div>
+                            </div>
+                        </div>
+
+                        <div class="tech-card flip">
+                            <div class="tech-inner">
+                                <div class="tech-front">Docker</div>
+                                <div class="tech-back">4</div>
+                            </div>
+                        </div>
+
+                        <div class="tech-card flip">
+                            <div class="tech-inner">
+                                <div class="tech-front">Vite</div>
+                                <div class="tech-back">5</div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PROJETOS -->
+        <section id="projects">
+            <div class="projects-header-container">
+                <span class="section-num">03.</span>
+                <h2 class="section-title" data-i18n="projects_title">Alguns Projetos</h2>
+                <div class="line-separator"></div>
+            </div>
+
+            <div class="projects-grid">
+                <!-- PROJETO 1 -->
+                <a href="https://diarioviva.vercel.app/" class="glass-panel project-card reveal-on-scroll">
+                    <div class="card-top">
+                        <img 
+                            src="/img/DiarioViva.png" 
+                            alt="Projeto Diario Viva" 
+                            class="icon-folder"
+                        >
+                    </div>
+
+                    <h3 class="card-title" data-i18n="proj1_title">DiarioViva</h3>
+                    <p class="card-desc" data-i18n="proj1_desc">
+                        Plataforma web desenvolvida para aproximar pacientes e profissionais de saúde,
+                        funcionando como um diário digital compartilhado.
+                    </p>
+
+                    <div class="card-tags">
+                        <span>React</span>
+                        <span>Vite</span>
+                        <span>JavaScript</span>
+                    </div>
+                </a>
+
+                <!-- PROJETO 2 -->
+                <a href="https://site-one-piece-xi.vercel.app/" class="glass-panel project-card reveal-on-scroll">
+                    <div class="card-top">
+                        <img 
+                            src="/img/OnePiece.png" 
+                            alt="Projeto One Piece" 
+                            class="icon-folder"
+                        >
+                    </div>
+
+                    <h3 class="card-title" data-i18n="proj2_title">One Piece</h3>
+                    <p class="card-desc" data-i18n="proj2_desc">
+                        Site temático desenvolvido para fãs, reunindo informações, curiosidades e conteúdos exclusivos sobre o universo One Piece.
+                    </p>
+
+                    <div class="card-tags">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                    </div>
+                </a>
+
+                <!-- PROJETO 3 -->
+                <a href="https://medi-care-front-end.vercel.app/" class="glass-panel project-card reveal-on-scroll">
+                    <div class="card-top">
+                        <img 
+                            src="/img/MediCare.png" 
+                            alt="Projeto MediCare" 
+                            class="icon-folder"
+                        >
+                    </div>
+
+                    <h3 class="card-title" data-i18n="proj3_title">MediCare</h3>
+                    <p class="card-desc" data-i18n="proj3_desc">
+                        Plataforma web para gerenciar medicamentos e estoques, ajudando usuários a organizar o uso, aumentar a eficiência e reduzir desperdícios.
+                    </p>
+
+                    <div class="card-tags">
+                        <span>React.JS</span>
+                        <span>C#</span>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <footer>
+            <div class="footer-socials">
+                <a href="https://github.com/Raquel212" class="footer-link">GitHub</a>
+                <a href="https://www.linkedin.com/in/raquel-c-martins/" class="footer-link">LinkedIn</a>
+                <a href="https://www.instagram.com/rcristina706/" class="footer-link">Instagram</a>
+                <a href="mailto:raquelcristinamartins750@gmail.com" class="footer-link">E-mail</a>
+            </div>
+            <p data-i18n="footer_credit">Design & Construção por Raquel Martins</p>
+            <p class="mt-2">© 2026</p>
+        </footer>
+
+    </main>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="script.js"></script>
+</html>
